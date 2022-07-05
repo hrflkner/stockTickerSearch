@@ -1,3 +1,8 @@
+/*
+    WITHOUT A DOUBT: this is the messiest code I've ever written
+    Plan to build an organized version in React or Angular 
+*/
+
 // Helper Function
 function formatLargeInteger(num) {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -33,7 +38,7 @@ let searchBtn = document.getElementById('searchBtn');
 // ----------------------
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    let key = `${process.env.API_KEY}`;
+    let key = `${secrets.API_KEY}`;
     let searchInput = document.getElementById('searchInput').value;
     let firstCall = fetch(
         `https://financialmodelingprep.com/api/v3/quote/${searchInput}?apikey=${key}`
