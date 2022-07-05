@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticker Search</title>
+    <script src="https://cdn.plot.ly/plotly-2.12.1.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Stock Search</h1>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="searchbar">
+        <button id="searchBtn">Search</button>
+        <input id="searchInput" type="text" placeholder="ticker symbol... (ex. AAPL)"></input>
+    </section>
+    <section class="stockinfo">
+        <div id="stockheader">
+            <h2 class="opening-header">Welcome!</h2>
+            <p class="opening-instruction">Please search for a US stock ticker, and the relevant data will display here!</p>
+        </div>
+        <div id="graphDiv"></div>
+    </section>
+    <footer>No data or information presented on this app should be taken as financial advice and should not be used to make financial decisions.</footer>
+    <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
